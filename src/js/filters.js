@@ -480,6 +480,12 @@ angular.module('netStatsApp.filters', [])
       }
 		}
 
+		if(node.info.role !== '') {
+			string = "Role: <b>" + node.info.role + "</b>";
+
+			tooltip.push(string);
+		}
+
 		if(node.info.net !== '') {
 			string = "Network: <b>" + (typeof node.info.net !== 'undefined' ? node.info.net : '-') + "</b>";
 
@@ -506,6 +512,24 @@ angular.module('netStatsApp.filters', [])
 
 		if(node.info.bridge !== '') {
 			string = "Bridge: <b>" + node.info.bridge + "</b>";
+
+			tooltip.push(string);
+		}
+
+		if(node.info.fuseAppVersion !== '') {
+			string = "FuseApp: <b>" + node.info.fuseAppVersion + "</b>";
+
+			tooltip.push(string);
+		}
+
+		if(node.info.netStatsVersion !== '') {
+			string = "netStats: <b>" + node.info.netStatsVersion + "</b>";
+
+			tooltip.push(string);
+		}
+
+		if(node.info.parityVersion !== '') {
+			string = "parity: <b>" + node.info.parityVersion + "</b>";
 
 			tooltip.push(string);
 		}
