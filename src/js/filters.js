@@ -517,19 +517,19 @@ angular.module('netStatsApp.filters', [])
 		}
 
 		if(node.info.fuseAppVersion !== '') {
-			string = "FuseApp: <b>" + node.info.fuseAppVersion + "</b>";
+			string = "Validator: <b>" + node.info.fuseAppVersion + "</b>";
 
 			tooltip.push(string);
 		}
 
 		if(node.info.netStatsVersion !== '') {
-			string = "netStats: <b>" + node.info.netStatsVersion + "</b>";
+			string = "Netstats: <b>" + node.info.netStatsVersion + "</b>";
 
 			tooltip.push(string);
 		}
 
 		if(node.info.parityVersion !== '') {
-			string = "parity: <b>" + node.info.parityVersion + "</b>";
+			string = "Parity: <b>" + node.info.parityVersion + "</b>";
 
 			tooltip.push(string);
 		}
